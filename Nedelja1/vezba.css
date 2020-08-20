@@ -31,9 +31,8 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas: "img1 img2 img3 img4" "img5 img6 img7 img8";
-    background-color: red;
+    gap: 1px 1px;
+    grid-template-areas: "img1 img2 img5 img5" "img3 img4 img5 img5";
     height: 100%;
 }
   
@@ -47,17 +46,8 @@ footer{
   
   .img5 { grid-area: img5; }
   
-  .img6 { grid-area: img6; }
-  
-  .img7 { grid-area: img7; }
-  
-  .img8 { grid-area: img8; }
-
 .grid-container div{
     border: 1px solid black;
-    background-image: url('https://via.placeholder.com/150');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 a{
