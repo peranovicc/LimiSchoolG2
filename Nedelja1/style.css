@@ -1,0 +1,19 @@
+body{
+    margin-left: 200px;
+}
+
+#header1 {
+    color: yellow;
+}
+
+div{
+    color: red;
+}
+
+.naslov {
+    color: green;
+}
+
+h1{
+    color: blue;
+}
