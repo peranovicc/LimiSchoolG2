@@ -1,3 +1,10 @@
 git status - Даје тренутни статус гита
 git add <ime_fajla> - Додаје на позорницу (припрема за commit)
 git add .    додаје све фајлове (промењене) на позорницу
+git revert --staged <ime_fajla> - Враћа са позорнице
+
+git commit -m "dsfs"   --  Комитује промене
+git log 
+
+git push   - Шаље на удаљени сервер (remote)
+git pull   - Повлачи са удаљеног сервера
