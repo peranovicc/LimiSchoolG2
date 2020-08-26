@@ -11,3 +11,15 @@ if(godina % 4 == 0 && (godina % 100 != 0 || godina % 400 == 0)){
 else{
     console.log(`${godina}. није преступна`)
 }
+
+// if(godina % 4 == 0){
+//     if(godina % 100 != 0 || godina % 400 == 0){
+//         console.log('jeste')
+//     }
+//     else{
+//         console.log('nije')
+//     }
+// }
+// else{
+//     console.log('nije prestupna')
+// }
