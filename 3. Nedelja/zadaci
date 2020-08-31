@@ -1,0 +1,128 @@
+1 	Ispisati prirodne brojeve od 1 do 5. 	 
+7_1 	Ispisati prirodne brojeve od 1 do 17. 	-
+3 	Ispis prirodnih brojeve od 3 do 8. 	-
+4 	Ispisati prirodne brojeve od 3 do 8 unazad. 	-
+5 	Ispis prirodnih brojeve od 5 do 20 unazad. 	-
+6 	Ispis brojeva od 1 do 20 u obliku: 1 2 3 4 5 6 7 8 9 ......20 	-
+2 	Napisati program za ispis kvadrata prirodnih brojeva od 1 do 5. 	-
+7 	Ispis kvadratnog korijena prirodnih brojeva do 10. 	-
+6_2 	Ispisati parne prirodne brojeve od 1 do 5. 	-
+7_2 	Ispisati parne prirodne brojeve od 1 do 17. 	-
+6_3 	Ispisati neparne prirodne brojeve od 1 do 5. 	-
+7_3 	Ispisati neparne prirodne brojeve od 1 do 17. 	-
+6_4 	Ispisati prirodne brojeve od 1 do 5 koji su djeljivi sa 3. 	-
+7_4 	Ispisati prirodne brojeve od 1 do 17 koji su djeljivi sa 3. 	-
+6_5 	Ispisati prirodne brojeve od 1 do 5 koji nisu djeljivi sa 3. 	-
+7_5 	Ispisati prirodne brojeve od 1 do 17 koji nisu djeljivi sa 3. 	-
+6_6 	Ispisati prirodne brojeve od 1 do 5 koji su djeljivi sa a. 	-
+7_6 	Ispisati prirodne brojeve od 1 do 17 koji su djeljivi sa a. 	-
+6_7 	Ispisati prirodne brojeve od 1 do 5 koji nisu djeljivi sa a. 	-
+7_7 	Ispisati prirodne brojeve od 1 do 17 koji nisu djeljivi sa a. 	-
+8 	Ispisati prirodne brojeve od 1 do n. 	-
+9 	Napisati program za ispis prvih n prirodnih brojeva unazad. 	-
+9_1 	Napisati program za ispis prirodnih brojeva od 3 do n. 	-
+10 	Ispisati prirodne brojeve od k do n. 	-
+11 	Napisati program za ispis recipročnih vrijednosti prvih n prirodnih brojeva. 	-
+12 	Napisati program za ispis dvostruke vrijednosti prvih n prirodnih brojeva. 	-
+13 	Ispis kvadrata prirodnih brojeva do n. 	-
+14 	Ispis kvadratnog korijena prirodnih brojeva do n. 	-
+16 	Napisati program za ispis parnih prirodnih brojeva od 1 do n. 	-
+16_2 	Ispisati neparne prirodne brojeve od 1 do n. 	-
+17 	Ispis paranih i neparnih prirodnih brojeva od 1 do n (test parnosti i neparnosti). 	-
+18 	Ispis prirodnih brojeva od 1 do n koji su djeljivi sa 5. 	-
+19 	Ispis prirodnih brojeva od k do n koji su djeljivi sa 5. 	-
+20 	Ispis prirodnih brojeva od k do n koji su djeljivi sa a. 	-
+21 	Suma prvih 5 prirodnih brojeva. 	-
+22 	Saberi prirodne brojeve do 100. 	-
+24 	Suma prvih n prirodnih brojeva. 	-
+25 	Suma prirodnih brojeva od k do n. 	-
+26 	Izračunati i ispisati sumu kvadrata prvih n prirodnih brojeva. 	-
+27 	Izračunati i ispisati sumu kvadrata prirodnih brojeva od k do n. 	-
+28 	Napisati program za ispis sume reciprocnih vrijednosti prvih n prirodnih brojeva (harmonijski niz: 1 + 1/2 + 1/3 + ... + 1/n) 	-
+29 	Izračunati i ispisati sumu reciprocnih vrijednosti prirodnih brojeva od k do n. 	-
+30 	Napisati program za izračunavanje sume niza:1 - 1/2 + 1/3 -+ ... -+ 1/n 	-
+30_1 	Suma neparnih prirodnih brojeva od 1 do 5. 	-
+30_3 	Suma parnih prirodnih brojeva od 1 do 5. 	-
+23 	Saberi parne prirodne brojeve do 100. 	-
+31 	Suma neparnih prirodnih brojeva od 1 do n. 	-
+32 	Suma parnih prirodnih brojeva od 1 do n. 	-
+33 	Suma parnih prirodnih brojeva od k do n. 	-
+34 	Izračunati sumu neparnih prirodnih brojeva u intervalu od k do n. 	-
+35 	Izračunati sumu prirodnih brojeva u intervalu od 1 do n koji su djeljivi sa 7. 	-
+35_1 	Izračunati i ispisati sumu prirodnih brojeva u intervalu od 1 do n koji su djeljivi sa 3. 	-
+35_3 	Izračunati sumu prirodnih brojeva u intervalu od 1 do n koji nisu djeljivi sa 3. 	-
+35_5 	Izračunati sumu prirodnih brojeva u intervalu od 1 do n koji nisu djeljivi sa 7. 	-
+36 	Izračunati sumu prirodnih brojeva u intervalu od 1 do n koji su djeljivi sa 7 i sa 3. 	-
+37 	Izračunati sumu prirodnih brojeva u intervalu od 1 do n koji su djeljivi sa a. 	-
+37_2 	Izračunati sumu prirodnih brojeva u intervalu od 1 do n koji nisu djeljivi sa a. 	-
+37_4 	Izračunati sumu prirodnih brojeva u intervalu od k do n koji su parni. 	-
+37_6 	Izračunati sumu prirodnih brojeva u intervalu od k do n koji su neparni. 	-
+37_04 	Izračunati sumu prirodnih brojeva u intervalu od k do n koji su djeljivi sa 3. 	-
+37_05 	Izračunati sumu prirodnih brojeva u intervalu od k do n koji nisu djeljivi sa 3. 	-
+37_06 	Izračunati sumu prirodnih brojeva u intervalu od k do n koji su djeljivi sa 7. 	-
+37_07 	Izračunati sumu prirodnih brojeva u intervalu od k do n koji nisu djeljivi sa 7. 	-
+38 	Izračunati sumu prirodnih brojeva u intervalu od k do n koji su djeljivi sa a. 	-
+38_2 	Izračunati sumu prirodnih brojeva u intervalu od k do n koji nisu djeljivi sa a. 	-
+39 	Izračunati sumu prirodnih brojeva u intervalu od 1 do n čija je cifra jedinica 8. 	-
+40 	Izračunati sumu prirodnih brojeva u intervalu od k do n čija je cifra jedinica 8. 	-
+41 	Naći sumu brojeva u intervalu od a do b djeljivih sa 5. 	-
+42 	Proizvod prvih 5 prirodnih brojeva. 	-
+42_2 	Izračunati proizvod parnih prirodnih brojeva od 1 do 5. 	-
+42_4 	Izračunati proizvod neparnih prirodnih brojeva od 1 do 5. 	-
+43 	Napisati program za ispis proizvoda (faktorijele) brojeva od 1 do 5. 	-
+44 	Napisati program za izračunavanje proizvoda od 1 do 10. 	-
+45 	Proizvod prirodnih od 1 do n. 	-
+45_2 	Proizvod parnih od prvih n prirodnih brojeva. 	-
+45_4 	Proizvod neparnih od prvih n prirodnih brojeva. 	-
+45_6 	Izračunati proizvod prirodnih brojeva u intervalu od 1 do n koji su djeljivi sa 3. 	-
+45_8 	Izračunati proizvod prirodnih brojeva u intervalu od 1 do n koji nisu djeljivi sa 3. 	-
+46 	Izračunati proizvod brojeva od 1 do n koji su djeljivi sa 7. 	-
+46_1 	Izračunati proizvod brojeva od 1 do n koji nisu djeljivi sa 7. 	-
+46_2 	Izračunati proizvod brojeva od 1 do n koji su djeljivi sa a. 	-
+46_4 	Izračunati proizvod brojeva od 1 do n koji nisu djeljivi sa a. 	-
+47 	Napisati program za ispis proizvoda brojeva od 1 do n koji su djeljivi sa 3 i sa 4. 	-
+48 	Napisati program za ispis proizvoda brojeva od 1 do n koji su djeljivi sa a. 	-
+49 	Napisati program za ispis proizvoda brojeva od 1 do n čija je cifra jedinica 6. 	-
+50 	Napisati program za ispis proizvoda brojeva od 1 do n čija je cifra jedinica 3. 	-
+51 	Proizvod prirodnih od k do n. 	-
+52 	Izračunati proizvod parnih brojeva od A do B. 	-
+52_1 	Izračunati proizvod parnih prirodnih brojeva u intervalu od k do n. 	-
+52_3 	Izračunati proizvod neparnih prirodnih brojeva u intervalu od k do n. 	-
+53_01 	Izračunati proizvod prirodnih brojeva u intervalu od k do n koji su djeljivi sa 3. 	-
+53_03 	Izračunati proizvod prirodnih brojeva u intervalu od k do n koji nisu djeljivi sa 3. 	-
+53_05 	Izračunati proizvod prirodnih brojeva u intervalu od k do n koji su djeljivi sa 7. 	-
+53_06 	Izračunati proizvod prirodnih brojeva u intervalu od k do n koji nisu djeljivi sa 7. 	-
+53 	Izračunati proizvod prirodnih brojeva u intervalu od k do n koji su djeljivi sa 4. 	-
+54 	Naći proizvod prirodnih brojeva u intervalu od k do n koji su djeljivi sa 2 i sa 3. 	-
+55 	Naći proizvod prirodnih brojeva u intervalu od k do n koji su djeljivi sa 2 a nisu djeljivi sa 3. 	-
+56 	Izračunati proizvod prirodnih brojeva u intervalu od k do n koji su djeljivi sa a. 	-
+57 	Naći proizvod prirodnih brojeva u intervalu od k do n čija je cifra jedinica 4. 	-
+58 	Izračunati sumu i proizvod prirodnih brojeva od k do n. Koristiti jednu i dvije petlje. 	-
+58_1 	Saberi i pomnoži prirodne brojeve do N koji su djeljivi sa 3. 	-
+59_02 	Prebrojati parne prirodne brojeve od 1 do 5. 	-
+59_03 	Prebrojati neparne prirodne brojeve od 1 do 5. 	-
+59 	Prebrojati parne prirodne brojeve u intervalu od 1 do n. 	-
+60 	Prebrojati neparne prirodne brojeve u intervalu od 1 do n. 	-
+60_2 	Prebrojati prirodne brojeve u intervalu od 1 do n koji su djeljivi sa 3. 	-
+61 	Prebrojati prirodne brojeve u intervalu od 1 do n koji su djeljivi sa l. 	-
+62 	Prebrojati prirodne brojeve u intervalu od k do n. 	-
+63 	Prebrojati parne prirodne brojeve u intervalu od k do n. 	-
+64 	Prebrojati neparne prirodne brojeve u intervalu od k do n. 	-
+65 	Prebrojati prirodne brojeve u intervalu od k do n koji su djeljivi sa 3. 	-
+66 	Prebrojati prirodne brojeve u intervalu od k do n koji nisu djeljivi sa 3. 	-
+67 	Prebrojati prirodne brojeve u intervalu od k do n koji su djeljivi sa l. 	-
+68 	Napisati program da nađe proizvod prirodnih brojeva od a do b i koliko ih ima. 	-
+69 	Napisati program da nađe proizvod prirodnih brojeva od a do b djeljivih sa 5 i koliko ih ima. 	-
+70 	Napisati program da nađe proizvod prirodnih brojeva od a do b djeljivih sa l i koliko ih ima. 	-
+71 	Naći sumu brojeva u intervalu od a do b djeljivih sa 5 i koliko ih ima. 	-
+72_01 	Izračunati aritmetičku sredinu prirodnih brojeva do 5. 	-
+72_03 	Izračunati aritmetičku sredinu parnih prirodnih brojeva do 5. 	-
+72_04 	Izračunati aritmetičku sredinu neparnih prirodnih brojeva do 5. 	-
+72 	Izračunati aritmetičku sredinu prirodnih brojeva do n. 	-
+73 	Izračunati aritmetičku sredinu neparnih prirodnih brojeva od 1 do n. 	-
+74 	Izračunati aritmetičku sredinu parnih prirodnih brojeva od 1 do n. 	-
+75 	Izračunati aritmetičku sredinu brojeva od k do n djeljivih sa l. 	-
+76 	Izračunati sumu 10 učitanih bojeva sa tastature. 	-
+77 	Izračunati sumu n učitanih bojeva sa tastature. 	-
+79 	Napisati program za određjivanje najmanjeg broja od n učitanih. 	-
+80 	Napisati program za određjivanje najvećeg broja od n učitanih.
