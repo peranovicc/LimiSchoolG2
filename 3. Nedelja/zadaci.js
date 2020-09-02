@@ -90,5 +90,20 @@
     // Написати програм који рачуна 
     // збир парних, а производ непарних бројева 
     // од K до N
-    
+
+    let K = 7
+    let N = 23
+    let zbir = 0, prozivod = 1
+
+    for(let i = K; i < N; i++){
+        if(i % 2 == 0){
+            zbir += i
+        }
+        else{
+            prozivod *= i
+        }
+    }
+
+    console.log(zbir,prozivod)
 }
+
