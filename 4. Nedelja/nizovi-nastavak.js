@@ -43,23 +43,23 @@
     // console.log(niz)
 }
 
-{
-    // Проверити да ли је стринг валидан (исписати true/false)
-    // Није празан
-    // Има најмање 4 карактера
-    // Има највише 20 карактера
+// {
+//     // Проверити да ли је стринг валидан (исписати true/false)
+//     // Није празан
+//     // Има најмање 4 карактера
+//     // Има највише 20 карактера
 
-    let str = '       d f     '
+//     let str = '       d f     '
 
-    if(str.trim() != '' && str.trim().length >= 4 && str.trim().length <= 20)
-        console.log(true)
-    else 
-        console.log(false)
+//     if(str.trim() != '' && str.trim().length >= 4 && str.trim().length <= 20)
+//         console.log(true)
+//     else 
+//         console.log(false)
 
 
-    // '   sda sds  sdas21    '.trim()  ---> 'sda sds  sdas21'
+//     // '   sda sds  sdas21    '.trim()  ---> 'sda sds  sdas21'
 
-}
+// }
 
 {
     // Провера email-a
@@ -67,12 +67,14 @@
     // Садржи реч  ['rs','com','org','srb','edu','co','ru']
     // Садржи карактер   '@'
 
-    let mail = 'dskfsdlf@fsld.com'
+    let mail = 'comcomcomcomc@.com'
     let domains = ['rs','com','org','srb','edu','co','ru']
-    if(mail.length >= 10 && mail.includes('@')){
-        
-    }
-    else{
-        console.log(false)
-    }
+    let validno = false
+
+    if(mail.length >= 10 && mail.includes('@'))
+        for(let domain of domains)
+            if(mail.endsWith('.' + domain))
+                validno = true
+                
+    console.log(validno)
 }
