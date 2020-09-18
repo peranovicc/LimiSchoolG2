@@ -12,15 +12,14 @@
 // let x = 7.2
 // let y = 3.3
 
-// function min2(a,b){
-//     let min = a
-//     if(b < min){
-//         min = b
-//     }
+function min2(a,b){
+    let min = a
+    if(b < min){
+        min = b
+    }
 
-//     return min
-// }
-
+    return min
+}
 
 
 // console.log(zbir(x,y))
@@ -29,6 +28,10 @@
 // console.log(kolicnik(x,y))
 
 // Написати функцију која исписује површину круга (параметар r)
+function povrsinaKruga(r){
+    console.log(r**2*Math.PI)
+}
+povrsinaKruga(4)
 // Написати функцију која враћа површину круга (параметар r)
 
 
