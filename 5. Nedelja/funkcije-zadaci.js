@@ -117,8 +117,10 @@ function last(arr,N){
 // [2,3,15,23,20,2,123,10,56,11] -> [15,20,10]
 
 function deljiviSa5(arr){
-    
+    return arr.filter(x => x % 5 == 0)
 }
+
+const deljiviSa5 = arr => arr.filter(x => !(x % 5))
 
 
 
