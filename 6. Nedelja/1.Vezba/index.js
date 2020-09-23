@@ -38,3 +38,6 @@ app.appendChild(promenljiva1)
 
         prom4.append(li1,li2,li3)
 
+
+// p , ul , li, a, img, div, h1
+
