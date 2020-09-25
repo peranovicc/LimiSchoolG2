@@ -35,3 +35,17 @@ btnAdd.addEventListener('click',() => {
 })
 
 btnSub.addEventListener('click',substract)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
