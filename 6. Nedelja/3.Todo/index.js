@@ -2,8 +2,6 @@ const forma = document.querySelector('#form-todo')
 const inputText = document.querySelector('#input-text')
 const divLista = document.querySelector('#lista')
 
-
-// На submit форме, направити параграф и убацити га у листу
 forma.addEventListener('submit',(event) => {
     event.preventDefault()
 
