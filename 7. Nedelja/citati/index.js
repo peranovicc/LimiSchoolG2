@@ -41,7 +41,7 @@ let citati = [
     }
 ]
 
-let ubaceniCitati = []
+const ubaceniCitati = []
 let id = 0
 
 const listaCitata = document.querySelector('#lista')
@@ -78,13 +78,24 @@ btnAdd.addEventListener('click',() => {
 })
 
 function dodajCitat(text,votes){
+    let id2 = id
+    const item = document.createElement('div')
+    item.className = 'item'
     const pText = document.createElement('p')
     pText.textContent = text
 
     const pVotes = document.createElement('p')
     pVotes.textContent = votes
 
-    listaCitata.append(pText,pVotes,document.createElement('hr'))
+    const btnVote = document.createElement('button')
+    btnVote.textContent = 'Vote'
+    btnVote.addEventListener('click',() => {
+        const pronadjen = ubaceniCitati.find()
+        pronadjen.glasovi++
+    })
+
+    item.append(pText,pVotes,document.createElement('hr'))
+    listaCitata.append(item)
 
     ubaceniCitati.push(
         {
@@ -93,7 +104,7 @@ function dodajCitat(text,votes){
             glasovi: votes
         }
     )
-    
+
     id++
 
     console.log(ubaceniCitati)

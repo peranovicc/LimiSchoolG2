@@ -10,8 +10,32 @@
     <input type="text" id="input-text"> 
     <button id="btnAdd">Додај нови</button>
     <div id="lista">
-        
+        <button id="levo">
+            &lt;
+        </button>
+        <div class="item">
+            <p>Izgleda nemoguće, dokle god se ne završi</p>
+            <p>5</p>
+            <button>Glasaj</button>
+        </div>
+        <button id="desno">
+            &gt;
+        </button>
+
     </div>
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
 </body>
 </html>
+
+<!-- 
+    const item = document.createElement('div')
+    item.className = 'item'
+    const pText = document.createElement('p')
+    pText.textContent = text
+
+    const pVotes = document.createElement('p')
+    pVotes.textContent = votes
+
+    const btnVote = document.createElement('button')
+    btnVote.textContent = 'Vote'
+    -->
