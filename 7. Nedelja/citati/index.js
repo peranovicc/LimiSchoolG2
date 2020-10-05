@@ -41,74 +41,172 @@ let citati = [
     }
 ]
 
-const ubaceniCitati = []
-let id = 0
+// const ubaceniCitati = []
+// let id = 0
 
-const listaCitata = document.querySelector('#lista')
-const btnAdd = document.querySelector('#btnAdd')
-const inputText = document.querySelector('#input-text')
+// const listaCitata = document.querySelector('#lista')
+// const btnAdd = document.querySelector('#btnAdd')
+// const inputText = document.querySelector('#input-text')
 
-citati.forEach(citat => {
-    dodajCitat(citat.citat,citat.glasovi)
-})
+// citati.forEach(citat => {
+//     dodajCitat(citat.citat,citat.glasovi)
+// })
 
-// for(let citat of citati){
+// // for(let citat of citati){
+// //     const pText = document.createElement('p')
+// //     pText.textContent = citat.citat
+
+// //     const pVotes = document.createElement('p')
+// //     pVotes.textContent = citat.glasovi
+
+// //     listaCitata.append(pText,pVotes,document.createElement('hr'))
+// // }
+
+// // for(let i = 0; i < citati.length; i++){
+// //     const pText = document.createElement('p')
+// //     pText.textContent = citati[i].citat
+
+// //     const pVotes = document.createElement('p')
+// //     pVotes.textContent = citati[i].glasovi
+
+// //     listaCitata.append(pText,pVotes,document.createElement('hr'))
+// // }
+
+
+// btnAdd.addEventListener('click',() => {
+//     dodajCitat(inputText.value,0)
+// })
+
+// function dodajCitat(text,votes){
+//     let id2 = id
+//     const item = document.createElement('div')
+//     item.className = 'item'
 //     const pText = document.createElement('p')
-//     pText.textContent = citat.citat
+//     pText.textContent = text
 
 //     const pVotes = document.createElement('p')
-//     pVotes.textContent = citat.glasovi
+//     pVotes.textContent = votes
 
-//     listaCitata.append(pText,pVotes,document.createElement('hr'))
+//     const btnVote = document.createElement('button')
+//     btnVote.textContent = 'Vote'
+//     btnVote.addEventListener('click',() => {
+//         const pronadjen = ubaceniCitati.find()
+//         pronadjen.glasovi++
+//     })
+
+//     item.append(pText,pVotes,document.createElement('hr'))
+//     listaCitata.append(item)
+
+//     ubaceniCitati.push(
+//         {
+//             id: id,
+//             citat: text,
+//             glasovi: votes
+//         }
+//     )
+
+//     id++
+
+//     console.log(ubaceniCitati)
 // }
 
-// for(let i = 0; i < citati.length; i++){
-//     const pText = document.createElement('p')
-//     pText.textContent = citati[i].citat
 
-//     const pVotes = document.createElement('p')
-//     pVotes.textContent = citati[i].glasovi
+/////////////////////////////////
 
-//     listaCitata.append(pText,pVotes,document.createElement('hr'))
-// }
+const btnLevo = document.querySelector('#levo')
+const btnDesno = document.querySelector('#desno')
+const slider = document.querySelector('#slider')
 
-
-btnAdd.addEventListener('click',() => {
-    dodajCitat(inputText.value,0)
-})
-
-function dodajCitat(text,votes){
-    let id2 = id
-    const item = document.createElement('div')
-    item.className = 'item'
+const item = document.querySelector('.item')
     const pText = document.createElement('p')
-    pText.textContent = text
+    pText.textContent = citati[0].citat
 
     const pVotes = document.createElement('p')
-    pVotes.textContent = votes
+    pVotes.textContent = citati[0].glasovi
+    item.append(pText,pVotes)
 
-    const btnVote = document.createElement('button')
-    btnVote.textContent = 'Vote'
-    btnVote.addEventListener('click',() => {
-        const pronadjen = ubaceniCitati.find()
-        pronadjen.glasovi++
-    })
+let tackice = '●' + '○'.repeat(citati.length - 1)
 
-    item.append(pText,pVotes,document.createElement('hr'))
-    listaCitata.append(item)
+slider.textContent = tackice
+let brojac = 0
 
-    ubaceniCitati.push(
-        {
-            id: id,
-            citat: text,
-            glasovi: votes
-        }
-    )
+brojac == 0 ? btnLevo.disabled = true : null
 
-    id++
 
-    console.log(ubaceniCitati)
-}
+
+// У круг
+// btnDesno.addEventListener('click',() => {
+//     let tmp = tackice.split('')
+//     tmp.unshift(tmp.pop())
+//     tackice = tmp.join('')
+//     slider.textContent = tackice
+//     brojac++
+//     pText.textContent = citati[brojac % citati.length].citat
+//     pVotes.textContent = citati[brojac % citati.length].glasovi
+
+// })
+// btnLevo.addEventListener('click',() => {
+    //     let tmp = tackice.split('')
+    //     tmp.push(tmp.shift())
+    //     tackice = tmp.join('')
+    //     slider.textContent = tackice
+    
+    //     brojac > 0 ? brojac-- : brojac = citati.length - 1
+    
+    //     // if(brojac > 0){
+    //     //     brojac--
+    //     // }
+    //     // else{
+    //     //     brojac = citati.length - 1
+    //     // }
+    
+    //     pText.textContent = citati[brojac % citati.length].citat
+    //     pVotes.textContent = citati[brojac % citati.length].glasovi
+    // })
+
+
+// Блокирање кад дођемо до краја / почетка
+btnDesno.addEventListener('click',() => {
+    let tmp = tackice.split('')
+    tmp.unshift(tmp.pop())
+    tackice = tmp.join('')
+    slider.textContent = tackice
+    brojac++
+    pText.textContent = citati[brojac].citat
+    pVotes.textContent = citati[brojac].glasovi
+
+    if(brojac == citati.length - 1){
+        btnDesno.disabled = true
+    }
+
+    btnLevo.disabled = false
+})
+
+btnLevo.addEventListener('click',() => {
+    let tmp = tackice.split('')
+    tmp.push(tmp.shift())
+    tackice = tmp.join('')
+    slider.textContent = tackice
+
+    brojac > 0 ? brojac-- : brojac = citati.length - 1
+
+    // if(brojac > 0){
+    //     brojac--
+    // }
+    // else{
+    //     brojac = citati.length - 1
+    // }
+
+    pText.textContent = citati[brojac % citati.length].citat
+    pVotes.textContent = citati[brojac % citati.length].glasovi
+
+    if(brojac == 0){
+        btnLevo.disabled = true
+    }
+    btnDesno.disabled = false
+})
+
+
 
 
 
