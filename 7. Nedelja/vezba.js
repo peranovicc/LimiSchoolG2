@@ -48,3 +48,7 @@ const sortirajNiz = (arr) => {
 
 console.log(sortirajNiz(niz))
 
+const najboljiDiv = document.querySelector('#najbolji')
+
+najboljiDiv.innerHTML = ''
+
