@@ -16,7 +16,9 @@ const Content = ({ osoba1,osoba2,osoba3,alkohol1,alkohol2,alkohol3 }) => {
   return (
     <>
     {/* <Osoba ime={o1.osoba} kolicina={o1.alkohol} /> */}
-      <p>
+    {/* <Osoba ime={osoba2} kolicina={alkohol2} /> */}
+    {/* <Osoba ime={osoba3} kolicina={alkohol3} /> */}
+    <p>
         {o1.osoba} {o1.alkohol}
       </p>
       <p>
@@ -43,11 +45,22 @@ const TMP = ({el}) => {
   )
 }
 
-const Osoba = ({ covek }) => {
+/* <Osoba ime={'Pera'} kolicina={13} /> */
+/* <Osoba ime={'Zika'} kolicina={50} /> */
+const Osoba = ({ ime,kolicina }) => {
   return (
-    <div className='ossfsoba'>
-      <p>{covek.ime}</p>
-      <p>{covek.alkohol}</p>
+    <div className='osoba'>
+      <p>{ime}</p>
+      <p>{kolicina}</p>
+    </div>
+  )
+}
+
+const Item = ({todo}) => {
+  return (
+    <div>
+      <p>{todo.text}</p>
+      <button>x</button>
     </div>
   )
 }
@@ -81,10 +94,10 @@ const App = () => {
     <div>
       {/* <Header ime={pab.ime} />
       <Content
-        osoba1={osoba1}
+        osoba1={'jfjdskf'}
         osoba2={osoba2}
         osoba3={osoba3}
-        alkohol1={alkohol1}
+        alkohol1={14.0231}
         alkohol2={alkohol2}
         alkohol3={alkohol3}
       />
