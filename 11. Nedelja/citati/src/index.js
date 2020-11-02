@@ -4,30 +4,21 @@ import ReactDOM from 'react-dom'
 const App = ({ citati }) => {
   const [selected, setSelected] = useState(0) // Селектован је нулти цитат
   const [votes,setVotes] = useState((new Array(citati.length).fill(0)))
-  const [best,setBest] = useState(0) // позиција најбољег цитата
-  
+  const [best,setBest] = useState(0)
+
+
   return (
     <div>
       <p>{citati[selected]}</p>  {/* Приказујемо селектован цитат */}
-      <p>{votes[selected]}</p>
       <button onClick={() => {
-        // 1. Копирање низа
-        // let tmp = []
-        // for(let el of votes){
-        //   tmp.push(el)
-        // }
         let tmp = [...votes]
-        // 2. Мењање копираног низа
         tmp[selected]++
-
-        // 3. Мењање стања
         setVotes(tmp)
-      }}>vote</button>
 
-      <button onClick={() => {
-        setSelected((selected + 1) % citati.length)
-      }}>Next</button>
-      <h1>BEST</h1>
+        if(tmp[selected] > tmp[best])
+          setBest(selected)
+      }}>Vote</button>
+      <h1>Best</h1>
       <p>{citati[best]}</p>
     </div>
   )
