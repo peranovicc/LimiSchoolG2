@@ -10,7 +10,7 @@ import ReactDOM from 'react-dom'
 
 const App = ({ citati }) => {
   const [selected, setSelected] = useState(0) // Селектован је нулти цитат
-
+ 
   return (
     <div>
       {citati[selected]}  {/* Приказујемо селектован цитат */}
