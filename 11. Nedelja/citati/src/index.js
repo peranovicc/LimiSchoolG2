@@ -6,7 +6,6 @@ const App = ({ citati }) => {
   const [votes,setVotes] = useState((new Array(citati.length).fill(0)))
   const [best,setBest] = useState(0)
 
-
   return (
     <div>
       <p>{citati[selected]}</p>  {/* Приказујемо селектован цитат */}
@@ -18,6 +17,8 @@ const App = ({ citati }) => {
         if(tmp[selected] > tmp[best])
           setBest(selected)
       }}>Vote</button>
+
+      <button onClick={() => setSelected((selected + 1) % citati.length)}>NEXT</button>
       <h1>Best</h1>
       <p>{citati[best]}</p>
     </div>
@@ -42,3 +43,47 @@ ReactDOM.render(
     </React.StrictMode>,
     document.getElementById('root')
 )
+
+
+
+///////////////////////////////
+let id = 0
+const Form = ({ niz,setNiz }) => {
+  const [sadrzaj,setSadrzaj] = useState('')
+
+  return (
+    <form onSubmit={(e) => {
+      e.preventDefault()
+
+      let x = {
+        id: id,
+        sadrzaj: sadrzaj
+      }
+      id++
+
+      setNiz([...niz,x])
+    }}>
+      <input type="text" placeholder="Todo..." onChange={(e) => setSadrzaj(e.target.value)} />
+      <input type="submit" value="Dodaj" />
+    </form>
+  )
+}
+
+const TodoList = ({ nizTodo }) => {
+  return (
+    <>
+      {nizTodo.map(todo => <p key={todo.id}>{todo.sadrzaj}</p>)}
+    </>
+  )
+}
+
+const App = () => {
+  const [todos,setTodos] = useState([])
+
+  return(
+    <>
+    <Form niz={todos} setNiz={setTodos} />
+    <TodoList nizTodo={todos} />
+    </>
+  )
+}
